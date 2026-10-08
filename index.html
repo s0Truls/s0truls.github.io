@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Streamer Watch</title>
+<style>
+  :root { --bg: #ffffff; --ink: #1d2128; --muted: #5b6472; --line: #e3e6eb; --accent: #b7791f; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #0f1115; --ink: #e8eaf0; --muted: #9aa3b2; --line: #2a2f3a; --accent: #f5b942; } }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 16px; }
+  h1 { font-size: 32px; margin: 0 0 8px; }
+  h2 { font-size: 20px; margin-top: 32px; }
+  p, li { color: var(--ink); }
+  .lead { color: var(--muted); font-size: 18px; }
+  a { color: var(--accent); }
+  footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Streamer Watch</h1>
+  <p class="lead">A private, self-hosted tool used by the YouTube channel <strong>The Creator Lobby</strong> to publish short video clips to its own channel.</p>
+
+  <h2>What it does</h2>
+  <ul>
+    <li>Runs only on the channel owner's own computer. It is not a public service and has no other users.</li>
+    <li>Prepares short highlight clips from livestreams, with the streamer credited and linked in every video description.</li>
+    <li>After the channel owner has reviewed and approved a clip, it uploads that clip to the owner's own YouTube channel using the YouTube Data API, with the title, description and tags the owner approved.</li>
+  </ul>
+
+  <h2>How it uses YouTube</h2>
+  <ul>
+    <li>Signs in only to the channel owner's own Google account, with the owner's consent (OAuth 2.0).</li>
+    <li>Uses the YouTube Data API to upload videos to that channel and to read the channel's name so the owner can see which channel is connected.</li>
+    <li>Does not access, collect or store data about any other YouTube user.</li>
+  </ul>
+
+  <p>By using this tool, the channel owner agrees to be bound by the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>.</p>
+
+  <footer>
+    <a href="privacy.html">Privacy Policy</a> ·
+    Contact: <a href="mailto:truls-soma@hotmail.com">truls-soma@hotmail.com</a>
+  </footer>
+</main>
+</body>
+</html>
